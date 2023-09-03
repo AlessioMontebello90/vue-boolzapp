@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolzapp</title>
+    <!-- fontAwesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- cumstom style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- vueJs  -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <!-- vueJs app -->
+    <div id="app">
+      <!-- main container -->
+      <div class="container fl">
+        <!-- left "contacts" column -->
+        <div class="left col fl">
+          <!-- headaer -->
+          <div class="contacts header fl"></div>
+          <!-- /header -->
+
+          <!-- CTA -->
+          <div class="cta cnt-row">
+            <div class="cta-img">
+              <i class="fa-solid fa-bell-slash" style="color: #8edafc"></i>
+            </div>
+            <div class="cta-text">
+              <h3>Ricevi notifiche di nuovi messaggi</h3>
+              <a href="">Attiva notifiche desktop</a>
+            </div>
+          </div>
+          <!-- /CTA -->
+
+          <!-- search bar -->
+          <div class="search-bar fl">
+            <div class="btn fl">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" placeholder="Cerca o inizia una nuova chat" />
+          </div>
+          <!-- /search bar -->
+
+          <!-- contacts list -->
+
+          <!-- /contacts list -->
+        </div>
+        <!-- /left "contacts" column -->
+        <div class="right fl col">
+          <div class="header fl"></div>
+          <main></main>
+          <footer></footer>
+        </div>
+      </div>
+    </div>
+    <!-- my script -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

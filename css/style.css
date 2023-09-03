@@ -1,0 +1,153 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common ----------------------------------------------------------------------*/
+body {
+  font-family: sans-serif;
+}
+
+#app {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#009688 20vh, #dadbd3 20vh, #dadbd3 100vh);
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0rem;
+}
+
+.container {
+  width: 80%;
+  min-width: 900px;
+  max-width: 1500px;
+  height: 90%;
+  min-height: 600px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+/* flex util. */
+
+.fl {
+  display: flex;
+}
+
+/* typografy */
+h3 {
+  font-size: 0.7rem;
+}
+
+a {
+  font-size: 0.7rem;
+  color: #b1b1b1;
+}
+
+header,
+footer {
+  color: #b1b1b1;
+}
+
+h2 {
+  color: black;
+  font-size: 0.7rem;
+}
+/* layout----------------------------------------------------------------------- */
+.col {
+  height: 100%;
+}
+
+.left {
+  width: 30%;
+  background-color: #fff;
+  border-right: 1px solid grey;
+  flex-direction: column;
+}
+
+.right {
+  width: 70%;
+  flex-direction: column;
+  background-color: #eaeaea;
+}
+
+/* common components */
+.header {
+  height: 80px;
+  background-color: #eaeaea;
+  /* debug */
+  border: 1px solid blue;
+}
+
+main {
+  flex-grow: 1;
+  background-image: url(../img/mine.jpg);
+  overflow-y: auto;
+}
+
+.right footer {
+  height: 60px;
+  width: 100%;
+  /* debug */
+  border: 1px solid black;
+}
+
+.cnt-row {
+  display: flex;
+  padding: 0.3rem 0.5rem;
+}
+
+/* left column internal layout & Styling----------------------------------------- */
+/* call to action */
+.cta {
+  background-color: #8edafc;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+
+.cta-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+/* search bar */
+.search-bar {
+  height: 40px;
+  background-color: #fafafa;
+  padding: 0.3rem 0.5rem;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  border-width: 1px;
+  border-style: none;
+  border: 1px solid #b1b1b1;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: 0;
+}
+
+.btn {
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  margin-right: -2px;
+  background: none;
+  border-width: 1px;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #b1b1b1;
+  color: #b1b1b1;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
