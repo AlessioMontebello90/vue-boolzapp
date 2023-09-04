@@ -121,7 +121,20 @@
 
           <!-- MAIN CONTENT HEADER -->
 
-          <main></main>
+          <main>
+            <div
+              class="message-row fl"
+              v-for="message in contacts[activeIndex].messages "
+            >
+              <div
+                class="message"
+                :class="message.status === 'received' ? 'reciv' : 'sent'"
+              >
+                <span>{{ message.message }}</span>
+                <p class="date">15:30</p>
+              </div>
+            </div>
+          </main>
 
           <!--USER INFO  -->
           <footer class="fl">
