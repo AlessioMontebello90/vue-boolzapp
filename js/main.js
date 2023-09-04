@@ -176,5 +176,9 @@ createApp({
       }
       return message;
     },
+
+    activeIndexCreator(index) {
+      this.activeIndex = index;
+    },
   },
 }).mount("#app");
