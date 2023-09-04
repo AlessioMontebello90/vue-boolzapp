@@ -180,5 +180,9 @@ createApp({
     activeIndexCreator(index) {
       this.activeIndex = index;
     },
+
+    sendMessage() {
+      const messageInput = this.newMessage;
+    },
   },
 }).mount("#app");
