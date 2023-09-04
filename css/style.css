@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* common ----------------------------------------------------------------------*/
 body {
   font-family: sans-serif;
@@ -38,6 +42,7 @@ body {
 /* typografy */
 h3 {
   font-size: 0.7rem;
+  color: black;
 }
 
 a {
@@ -52,8 +57,13 @@ footer {
 
 h2 {
   color: black;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  margin-top: 0.2rem;
 }
+
+p{
+  font-size: .7rem;
+  margin-top: .2rem;
 /* layout----------------------------------------------------------------------- */
 .col {
   height: 100%;
@@ -64,6 +74,7 @@ h2 {
   background-color: #fff;
   border-right: 1px solid grey;
   flex-direction: column;
+  color: #B1B1B1;
 }
 
 .right {
@@ -150,4 +161,23 @@ main {
   color: #b1b1b1;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+}
+
+/* contact list */
+.contact-img{
+  min-width: 50px;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.contact-info{
+  flex-grow: 1;
+}
+
+.cnts{
+  border-bottom: 1px solid #f1f1f1;
 }

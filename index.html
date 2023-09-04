@@ -25,9 +25,8 @@
       <div class="container fl">
         <!-- left "contacts" column -->
         <div class="left col fl">
-          <!-- headaer -->
+          <!-- header -->
           <div class="contacts header fl"></div>
-          <!-- /header -->
 
           <!-- CTA -->
           <div class="cta cnt-row">
@@ -39,7 +38,6 @@
               <a href="">Attiva notifiche desktop</a>
             </div>
           </div>
-          <!-- /CTA -->
 
           <!-- search bar -->
           <div class="search-bar fl">
@@ -48,9 +46,22 @@
             </div>
             <input type="text" placeholder="Cerca o inizia una nuova chat" />
           </div>
-          <!-- /search bar -->
 
           <!-- contacts list -->
+
+          <div v-for="contact in contacts" class="cnt-row cnts">
+            <div class="contact-img">
+              <img :src="`img/avatar${contact.avatar}.jpg`" alt="" />
+            </div>
+            <div class="contact-info">
+              <h2>{{contact.name}}</h2>
+              <p>
+                {{ tronca(contact.messages[contact.messages.length -
+                1].message,35) }}
+              </p>
+            </div>
+            <p class="hour">12.00</p>
+          </div>
         </div>
         <!-- /left "contacts" column -->
         <div class="right fl col">
