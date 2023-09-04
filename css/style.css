@@ -28,9 +28,22 @@ body {
   min-width: 900px;
   max-width: 1500px;
   height: 90%;
-  min-height: 600px;
+  max-height: 1000px;
+  min-height: 450px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
+}
+
+.actions {
+  list-style-type: none;
+  height: 100%;
+  align-items: center;
+}
+
+.actions li a {
+  margin-right: 10px;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 /* flex util. */
@@ -61,9 +74,10 @@ h2 {
   margin-top: 0.2rem;
 }
 
-p{
-  font-size: .7rem;
-  margin-top: .2rem;
+p {
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
 /* layout----------------------------------------------------------------------- */
 .col {
   height: 100%;
@@ -72,9 +86,9 @@ p{
 .left {
   width: 30%;
   background-color: #fff;
-  border-right: 1px solid grey;
+  border-right: 1px solid #f1f1f1;
   flex-direction: column;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .right {
@@ -86,7 +100,12 @@ p{
 /* common components */
 .header {
   height: 80px;
+  min-height: 80px;
   background-color: #eaeaea;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  justify-content: space-between;
+
   /* debug */
   border: 1px solid blue;
 }
@@ -98,7 +117,7 @@ main {
 }
 
 .right footer {
-  height: 60px;
+  height: 80px;
   width: 100%;
   /* debug */
   border: 1px solid black;
@@ -110,6 +129,20 @@ main {
 }
 
 /* left column internal layout & Styling----------------------------------------- */
+
+.user-info {
+  align-items: center;
+}
+
+.img {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  overflow: hidden;
+  object-fit: cover;
+}
 /* call to action */
 .cta {
   background-color: #8edafc;
@@ -164,9 +197,15 @@ main {
 }
 
 /* contact list */
-.contact-img{
+
+.contact-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.contact-img {
   min-width: 50px;
-  width: 50px; 
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 15px;
@@ -174,10 +213,20 @@ main {
   object-fit: cover;
 }
 
-.contact-info{
+.contact-info {
   flex-grow: 1;
 }
 
-.cnts{
+.cnts {
   border-bottom: 1px solid #f1f1f1;
+}
+
+/* main styling ------------------------------------------------------------------------- */
+.contact-info p {
+  font-size: 15px;
+  color: #b1b1b1;
+}
+
+.active {
+  background-color: #e9ebeb;
 }
