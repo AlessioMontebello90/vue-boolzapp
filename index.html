@@ -25,7 +25,7 @@
       <div class="container fl">
         <!-- left "contacts" column -->
         <div class="left col fl">
-          <!-- header -->
+          <!-- headaer -->
           <div class="contacts header fl">
             <div class="user-info fl">
               <div class="img">
@@ -46,10 +46,8 @@
               </li>
             </ul>
           </div>
+          <!-- /header -->
 
-          <!-- HEADER -->
-
-          <!-- CTA -->
           <div class="cta cnt-row">
             <div class="cta-img">
               <i class="fa-solid fa-bell-slash" style="color: #8edafc"></i>
@@ -67,9 +65,9 @@
             </div>
             <input type="text" placeholder="Cerca o inizia una nuova chat" />
           </div>
+          <!-- /search bar -->
 
           <!-- contacts list -->
-
           <div class="contact-list">
             <div
               v-for="(contact, index) in contacts"
@@ -90,9 +88,13 @@
               <p class="hour">12.00</p>
             </div>
           </div>
+          <!-- /contacts list -->
         </div>
         <!-- /left "contacts" column -->
+
+        <!-- main content and chat screen -->
         <div class="right fl col">
+          <!-- main cintent header -->
           <div class="header fl">
             <div class="cnt-row">
               <div class="contact-img">
@@ -106,6 +108,7 @@
                 <p>Ultimo accesso oggi alle 12.00</p>
               </div>
             </div>
+
             <ul class="actions fl">
               <li>
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -118,9 +121,7 @@
               </li>
             </ul>
           </div>
-
-          <!-- MAIN CONTENT HEADER -->
-
+          <!-- /main content header -->
           <main>
             <div
               class="message-row fl"
@@ -135,8 +136,7 @@
               </div>
             </div>
           </main>
-
-          <!--USER INFO  -->
+          <!-- user input -->
           <footer class="fl">
             <div class="interactions fl">
               <a href=""><i class="fa-regular fa-face-smile"></i></a>
@@ -153,7 +153,9 @@
               <a href=""><i class="fa-solid fa-microphone"></i></a>
             </div>
           </footer>
+          <!-- /user input -->
         </div>
+        <!--/ main content and chat screen -->
       </div>
     </div>
     <!-- my script -->

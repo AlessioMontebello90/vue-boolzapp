@@ -3,6 +3,9 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      newMessage: "",
+      activeIndex: 0,
+      newActiveIndex: 0,
       contacts: [
         {
           name: "Michele",
@@ -169,7 +172,7 @@ createApp({
     };
   },
   methods: {
-    //funzione per troncare i messaggi troppo lunghi nella preview dei contatti
+    //funzione per  preview dei contatti
     messageCrop(message, maxLength) {
       if (message.length > maxLength) {
         return message.slice(0, maxLength) + "...";
@@ -183,6 +186,28 @@ createApp({
 
     sendMessage() {
       const messageInput = this.newMessage;
+      const trimmedMessage = messageInput.trim();
+      if (trimmedMessage !== "") {
+        const newObjMessage = {
+          date: "10/01/2020 15:30:55",
+          message: messageInput,
+          status: "sent",
+        };
+        this.contacts[this.activeIndex].messages.push(newObjMessage);
+        this.newMessage = "";
+        this.newActiveIndex = this.activeIndex;
+
+        setTimeout(() => {
+          const actualIndex = this.newActiveIndex;
+          const response = "ok";
+          const responseObj = {
+            date: "10/01/2020 15:30:55",
+            message: response,
+            status: "received",
+          };
+          this.contacts[actualIndex].messages.push(responseObj);
+        }, 2000);
+      }
     },
   },
 }).mount("#app");
