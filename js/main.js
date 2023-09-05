@@ -210,6 +210,11 @@ createApp({
       }
     },
 
-    timeToText(timestring) {},
+    // timeToText(timestring) {
+    //   console.log(timestring);
+    //   const sessageDateTime = DateTime.fromISO(timestring);
+    //   console.log(messageDateTime.toLocalString(DateTime.DATETIME_MED));
+    //   console.log("...");
+    // },
   },
 }).mount("#app");
