@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      nameFilter: "",
       newMessage: "",
       activeIndex: 0,
       newActiveIndex: 0,
@@ -217,4 +218,13 @@ createApp({
     //   console.log("...");
     // },
   },
+  // computed: {
+  //   filter() {
+  //     return this.contacts.filter((contacts) => {
+  //       return contacts.name
+  //         .toLowerCase()
+  //         .includes(this.nameFilter.toLowerCase());
+  //     });
+  //   },
+  // },
 }).mount("#app");
