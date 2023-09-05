@@ -138,6 +138,21 @@
                 class="message"
                 :class="message.status === 'received' ? 'reciv' : 'sent'"
               >
+                <!-- <div class="dropdown align-self-end">
+                  <button
+                    class="btn dropdown-toggle p-0 m-0"
+                    style="border: 0; color: black"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">info</a></li>
+                    <li @click="deleteItem(index)">
+                      <a class="dropdown-item" href="#">Cancella messaggio</a>
+                    </li>
+                  </ul>
+                </div> -->
                 <span>{{ message.message }}</span>
                 <p class="date">15:30</p>
               </div>

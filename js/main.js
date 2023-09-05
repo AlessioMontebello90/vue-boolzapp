@@ -211,12 +211,9 @@ createApp({
       }
     },
 
-    // timeToText(timestring) {
-    //   console.log(timestring);
-    //   const sessageDateTime = DateTime.fromISO(timestring);
-    //   console.log(messageDateTime.toLocalString(DateTime.DATETIME_MED));
-    //   console.log("...");
-    // },
+    deleteItem(index) {
+      this.contacts[this.activeIndex].messages.splice(index, 1);
+    },
   },
   computed: {
     filter() {
