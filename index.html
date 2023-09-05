@@ -61,11 +61,15 @@
           </div>
 
           <!-- search bar -->
-          <div v-model="nameFilter" class="search-bar fl">
+          <div class="search-bar fl">
             <div class="btn fl">
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <input type="text" placeholder="Cerca o inizia una nuova chat" />
+            <input
+              v-model="nameFilter"
+              type="text"
+              placeholder="Cerca o inizia una nuova chat"
+            />
           </div>
           <!-- /search bar -->
 
@@ -73,6 +77,7 @@
           <div class="contact-list">
             <div
               v-for="(contact, index) in contacts"
+              v-show="(contact.name.toLowerCase().includes(nameFilter.toLowerCase()))"
               @click="activeIndexCreator(index)"
               :class="activeIndex === index ? 'active': '' "
               class="cnt-row cnts"

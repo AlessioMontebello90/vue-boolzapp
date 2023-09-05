@@ -218,13 +218,13 @@ createApp({
     //   console.log("...");
     // },
   },
-  // computed: {
-  //   filter() {
-  //     return this.contacts.filter((contacts) => {
-  //       return contacts.name
-  //         .toLowerCase()
-  //         .includes(this.nameFilter.toLowerCase());
-  //     });
-  //   },
-  // },
+  computed: {
+    filter() {
+      return this.contacts.filter((contacts) => {
+        return contacts.name
+          .toLowerCase()
+          .includes(this.nameFilter.toLowerCase());
+      });
+    },
+  },
 }).mount("#app");
