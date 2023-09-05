@@ -209,5 +209,7 @@ createApp({
         }, 2000);
       }
     },
+
+    timeToText(timestring) {},
   },
 }).mount("#app");
